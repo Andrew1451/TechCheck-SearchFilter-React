@@ -1,22 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const names = [{id: 1, username: 'Van Halen'}, {id: 2, username: 'Shred Flanders'}, {id: 3, username: 'Jimi Hendrix'}, {id: 4, username: 'James Hetfield'}, {id: 5, username: 'Kirk Hammet'}, {id: 6, username: 'Eric Clapton'}, {id: 7, username: 'Synyster Gates'}, {id: 8, username: 'Zacky Vengeance'}, {id: 9, username: 'Paul Gilbert'}, {id: 10, username: 'Yngwie Malmsteen'}, {id: 11, username: 'Andy James'}, {id: 12, username: 'Steve Vai'}, {id: 13, username: 'Zakk Wylde'}]
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Usernames</h2>
+        <hr/>
+        <input type='text'/>
+        <button>Search</button>
+        <ul>
+          {names.map(name => {
+            return <li key={name.id}>{name.username}</li>
+          })}
+        </ul>
       </header>
     </div>
   );
