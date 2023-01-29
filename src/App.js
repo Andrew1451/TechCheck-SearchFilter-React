@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const namesFromDatabase = [
-    {id: 1, username: 'Van Halen'}, 
+    {id: 1, username: 'Eddie Van Halen'}, 
     {id: 2, username: 'Shred Flanders'}, 
     {id: 3, username: 'Jimi Hendrix'}, 
     {id: 4, username: 'James Hetfield'}, 
